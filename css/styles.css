@@ -1,0 +1,147 @@
+
+/* ===========head============ */
+
+
+:root {
+    --main-font: 'Roboto' sans-serif;
+    --main-text-color: #2C2C2C;
+}
+
+.conteiner {
+    width: 1280px;
+    padding: 0 15px;
+    /* border: 2px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* body {
+   margin-top: 0;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    color: var(--main-text-color);
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* ==============header============= */
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    
+   
+}
+
+.nav-header {
+    display: flex;
+}
+
+.header-box {
+    display: flex;
+}
+
+.header-logo {
+padding: 10px 0;
+}
+
+.header-list {
+    display: flex;
+    gap: 28px;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.link-text {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+    color: var(--main-text-color);
+}
+
+.btn-header {
+    display: block;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--main-text-color);
+    height: 32px;
+    padding: 6px 18px;
+    margin-right: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #BBF330;
+    border-radius: 30px;
+    border: none;
+}
+
+.link-text:hover,
+.link-text:focus {
+color: #BBF330;
+text-decoration: underline;
+
+}
+
+/* ================ 1 секція =================== */
+
+.main-block {
+    display: flex;
+    padding-top: 42px;
+    padding-bottom: 27px;
+    padding-right: 44px;
+    justify-content: space-between;
+}
+
+.text-block {
+    max-width: 514px;
+    align-items: center;
+    padding-left: 16px;
+    padding-top: 110px;
+}
+
+.main-title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    
+}
+
+.main-text {
+    font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 46px;
+}
+
+.img-plate {
+    display: flex;
+    max-width: 512px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 14px #FFE550;
+    
+}
