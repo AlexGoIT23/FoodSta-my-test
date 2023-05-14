@@ -1,0 +1,17 @@
+body {
+    /* background-color: teal; */
+}
+
+.div-aple {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    border: 2px solid red;
+    background-color: #fff;
+    background-image: url(./images/banan.jpg);
+    
+}
+
+.section {
+    background-image: url(./aple.jpg);
+}
