@@ -34,6 +34,11 @@ p {
 ul {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
 }
 
 .list {
@@ -80,7 +85,8 @@ padding: 10px 0;
 }
 
 .btn-header {
-    display: block;
+    display: flex;
+    align-items: start;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 13px;
@@ -95,6 +101,12 @@ padding: 10px 0;
     border-radius: 30px;
     border: none;
 }
+
+.btn-header:hover,
+.btn-header:focus {
+background-color: #FFE450;
+}
+
 
 .link-text:hover,
 .link-text:focus {
@@ -144,4 +156,168 @@ text-decoration: underline;
     border-radius: 50%;
     box-shadow: 0 0 0 14px #FFE550;
     
+}
+
+/* ============ Секція 2 ================= */
+
+.second-section {
+   background-color: #FFE450; 
+   padding-top: 124px;
+   padding-bottom: 124px;
+}
+
+.aple-box {
+    display: flex;
+}
+
+.aple-item {
+    display: flex;
+    padding-left: 40px;
+
+    
+}
+
+ 
+.aple-img {
+  
+     display: flex;
+    max-width: 100%;
+    height: auto;
+      border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 14px #50ff7c;
+   
+    
+}
+.aple-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.part-list {
+    max-width: 254px;
+}
+
+.right-aple-box {
+
+    margin-left: 126px;
+
+}
+
+.aple-title {
+    font-family: var(--main-font);
+  font-weight: 700;
+font-size: 42px;
+line-height: 1.2;  
+max-width: 540px;
+}
+
+.aple-text {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 500px;
+        margin-top: 20px;
+}
+
+.bg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    
+}
+
+.skills-title {
+    font-family: var(--main-font);
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 16px;
+}
+
+.skills-text {
+    font-family: var(--main-font);
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        
+}
+
+.aple-btn {
+        display: flex;
+        align-items: center;
+            font-family: var(--main-font);
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--main-text-color);
+            height: 32px;
+            padding: 6px 18px;
+            margin-right: 18px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #FFFFFF;
+                     
+                border: 2px solid #7EB101;
+            border-radius: 30px;
+           
+}
+
+.aple-btn:hover,
+.aple-btn:focus {
+    background-color: #BBF330;
+    border: none;
+
+}
+
+
+/* ================== Favorites =============== */
+
+.third-section {
+    padding-top: 100px;
+    padding-bottom: 106px;
+}
+
+.meal-title {
+  font-weight: 700;
+font-size: 42px;
+line-height: 1.2;
+text-align: center; 
+padding-bottom: 22px; 
+}
+
+.meal-text {
+font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+.meal-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 56px 30px;
+    column-gap: 60px;
+    row-gap: 60px;
+    
+}
+
+.meal-box {
+width: calc((100% - 120px) /3);
+}
+
+.meal-img {
+    display: flex;
+    
+    height: auto;
+    border: 26px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 14px #FFE550;
 }
