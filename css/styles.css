@@ -174,7 +174,8 @@ text-decoration: underline;
 
 .aple-item {
     display: flex;
-    background-image: url(/aple.jpg);
+    background-image: url(../images/aple.jpg);
+    /* background-image: url(../); */
     background-repeat: no-repeat;
     background-size: contain;
     width: 550px;
