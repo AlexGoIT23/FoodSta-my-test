@@ -19,7 +19,7 @@
     <header>
         <div class="container header-block">
             <a href="" class="header-logo">
-                <svg width="66" height="52">
+                <svg aria-label="логотип" width="66" height="52">
                     <use href="./images/symbol-defs.svg#icon-logo"></use>
                 </svg>
             </a>
@@ -52,7 +52,9 @@
                     </p>
                     <button type="button" class="btn-header">Order Now</button>
                 </div>
-                <img src="./images/plate.jpg" alt="тарілка з їжею" class="img-plate">
+                <!-- <div class="img-plate-box"> -->
+                <img src="./images/plate-cut.jpg" alt="тарілка з їжею" class="img-plate">
+                <!-- </div> -->
             </div>
         </section>
 
@@ -111,78 +113,84 @@
             </div>
         </section>
 
-        <section>
+        <section class="forth-section">
             <div class="container">
-                <h2>What our Customers Say</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <ul>
-                    <li>
-                        <ul>
-                            <li>
-                                <svg>
-                                    <use href="./images/Vector0.svg"></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-
-                            </li>
+                <h2 class="about-title">What our Customers Say</h2>
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="about-cards">
+                    <div class="about-card-one">
+                        <ul class="card-one-list">
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
                         </ul>
-                    </li>
-                    <article>
-                        “The Best app I have used to order food in a while, so many options to choose from too, I would
-                        recommend to a freind,
-                        No questions asked”
-                    </article>
-                    <div>
-                        <img src="" alt="">
-                        <h4>Sumith Shah</h4>
-                        <p>Some Dude</p>
+                        <article class="card-one-text">
+                            “The Best app I have used to order food in a while, so many options to choose from too, I
+                            would
+                            recommend to a freind,
+                            No questions asked”
+                        </article>
+                        <div class="card-team">
+                            <div class="card-img-man">
+                                <!-- <img src="./images/some-man.jpg" alt="Some Dude" class="img"> -->
+                            </div>
+                            <div class="team-about">
+                                <h4 class="team-title">Sumith Shah</h4>
+                                <p class="team-text">Some Dude</p>
+                            </div>
+                            <div class="line"></div>
 
+                        </div>
                     </div>
-                    <li>
-                        <ul>
-                            <li>
-                                <svg>
-                                    <use></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-                                <svg>
-                                    <use></use>
-                                </svg>
-
-
-                            </li>
+                    <div class="about-card-one">
+                        <ul class="card-one-list">
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg aria-label="зірка" width="16" height="16">
+                                    <use href="../images/symbol-defs.svg#icon-star"></use>
+                                </svg></li>
                         </ul>
-                        <article>“The ease with which I can just go in and order what i want was amazing, It has been a
+                        <article class="card-one-text">
+                            “The ease with which I can just go in and order what i want was amazing, It has been a
                             very pleasant experience ordering
                             from this app”
                         </article>
-                        <div>
-                            <img src="" alt="">
-                            <h4>Sumith Shah</h4>
-                            <p>Some Dude</p>
+                        <div class="card-team">
+                            <div class="card-img-girl">
+                                <!-- <img src="./images/some-man.jpg" alt="Some Dude" class="img"> -->
+                            </div>
+                            <div class="team-about">
+                                <h4 class="team-title">Sumith Shah</h4>
+                                <p class="team-text">Some Girl</p>
+                            </div>
+                            <div class="line"></div>
 
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+
 
             </div>
         </section>
