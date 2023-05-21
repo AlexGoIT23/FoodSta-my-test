@@ -2,27 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <!-- <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"> -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-
     <header>
         <div class="container header-block">
-            <a href="" class="header-logo">
-                <svg aria-label="логотип" width="66" height="52">
-                    <use href="./images/symbol-defs.svg#icon-logo"></use>
-                </svg>
-            </a>
+            <div class="logo-box">
+                <a href="" class=" header-logo">
+                    <svg aria-label="логотип" width="66" height="52">
+                        <use href="./images/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                </a>
+            </div>
             <div class="header-box">
                 <nav class="nav-header">
                     <ul class="header-list list">
@@ -39,22 +40,22 @@
     </header>
 
     <main>
-
         <section class="first-section">
             <div class="container main-block">
                 <div class="text-block">
                     <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
-                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros
-                        elementum
-                        tristique. Duis
-                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                    <p class="main-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique. Duis cursus,
+                        mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                        libero vitae erat.
                     </p>
                     <button type="button" class="btn-header">Order Now</button>
                 </div>
-                <!-- <div class="img-plate-box"> -->
-                <img src="./images/plate-cut.jpg" alt="тарілка з їжею" class="img-plate">
-                <!-- </div> -->
+                <div class="img-plate-box">
+                    <img src="./images/plate.png" alt="тарілка з їжею" class="img-plate" />
+                    <img src="./images/plate-two.png" alt="тарілка" class="img-plate-two">
+                </div>
             </div>
         </section>
 
@@ -65,35 +66,39 @@
                 </div>
                 <div class="right-aple-box">
                     <h2 class="aple-title">What’s Special About Our Offerings</h2>
-                    <p class="aple-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros
-                        elementum
-                        tristique. Duis
-                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                    <p class="aple-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique. Duis cursus,
+                        mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+                        libero vitae erat.
                     </p>
                     <ul class="list aple-list">
                         <li class="part-list">
-                            <div class="bg-icon"><svg aria-label="ракета" width="26" height="26" class="bg-svg">
+                            <div class="bg-icon">
+                                <svg aria-label="ракета" width="26" height="26" class="bg-svg">
                                     <use href="./images/symbol-defs.svg#icon-rocket"></use>
                                 </svg>
                             </div>
                             <h3 class="skills-title">Fasest Delivery</h3>
-                            <p class="skills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                varius enim in eros.
+                            <p class="skills-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros.
                             </p>
                         </li>
                         <li class="part-list">
-                            <div class="bg-icon"><svg aria-label="клік" width="26" height="26">
+                            <div class="bg-icon">
+                                <svg aria-label="клік" width="26" height="26">
                                     <use href="./images/symbol-defs.svg#icon-click"></use>
                                 </svg>
                             </div>
                             <h3 class="skills-title">Easy To Order</h3>
-                            <p class="skills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                varius enim in eros.
+                            <p class="skills-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros.
                             </p>
                         </li>
                     </ul>
-                    <button type="button" class="aple-btn">Order Now</button>
+                    <button type="button" class="aple-btn" data-modal-open>Order Now</button>
                 </div>
             </div>
         </section>
@@ -101,14 +106,28 @@
         <section class="third-section">
             <div class="container">
                 <h2 class="meal-title">Some of Our Favorites</h2>
-                <p class="meal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="meal-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <ul class="list meal-list">
-                    <li class="meal-box"><img src="./images/gamburger.jpg" alt="бургер" class="meal-img"></li>
-                    <li class="meal-box"><img src="./images/Pasta.jpg" alt="паста" class="meal-img"></li>
-                    <li class="meal-box"><img src="./images/pizza.jpg" alt="піца" class="meal-img"></li>
-                    <li class="meal-box"><img src="./images/chicken.jpg" alt="лазанья" class="meal-img"></li>
-                    <li class="meal-box"><img src="./images/salat.jpg" alt="рибний салат" class="meal-img"></li>
-                    <li class="meal-box"><img src="./images/borshch.jpg" alt="борщ" class="meal-img"></li>
+                    <li class="meal-box">
+                        <img src="./images/gamburger.jpg" alt="бургер" class="meal-img" />
+                    </li>
+                    <li class="meal-box">
+                        <img src="./images/Pasta.jpg" alt="паста" class="meal-img" />
+                    </li>
+                    <li class="meal-box">
+                        <img src="./images/pizza.jpg" alt="піца" class="meal-img" />
+                    </li>
+                    <li class="meal-box">
+                        <img src="./images/chicken.jpg" alt="лазанья" class="meal-img" />
+                    </li>
+                    <li class="meal-box">
+                        <img src="./images/salat.jpg" alt="рибний салат" class="meal-img" />
+                    </li>
+                    <li class="meal-box">
+                        <img src="./images/borshch.jpg" alt="борщ" class="meal-img" />
+                    </li>
                 </ul>
             </div>
         </section>
@@ -116,31 +135,42 @@
         <section class="forth-section">
             <div class="container">
                 <h2 class="about-title">What our Customers Say</h2>
-                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <div class="about-cards">
                     <div class="about-card-one">
                         <ul class="card-one-list">
-                            <li><svg aria-label="зірка" width="16" height="16">
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
+                                </svg>
+                            </li>
                         </ul>
                         <article class="card-one-text">
-                            “The Best app I have used to order food in a while, so many options to choose from too, I
-                            would
-                            recommend to a freind,
-                            No questions asked”
+                            “The Best app I have used to order food in a while, so many
+                            options to choose from too, I would recommend to a freind, No
+                            questions asked”
                         </article>
                         <div class="card-team">
                             <div class="card-img-man">
@@ -151,31 +181,40 @@
                                 <p class="team-text">Some Dude</p>
                             </div>
                             <div class="line"></div>
-
                         </div>
                     </div>
                     <div class="about-card-one">
                         <ul class="card-one-list">
-                            <li><svg aria-label="зірка" width="16" height="16">
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
-                            <li><svg aria-label="зірка" width="16" height="16">
+                                </svg>
+                            </li>
+                            <li>
+                                <svg aria-label="зірка" width="16" height="16">
                                     <use href="../images/symbol-defs.svg#icon-star"></use>
-                                </svg></li>
+                                </svg>
+                            </li>
                         </ul>
                         <article class="card-one-text">
-                            “The ease with which I can just go in and order what i want was amazing, It has been a
-                            very pleasant experience ordering
-                            from this app”
+                            “The ease with which I can just go in and order what i want was
+                            amazing, It has been a very pleasant experience ordering from
+                            this app”
                         </article>
                         <div class="card-team">
                             <div class="card-img-girl">
@@ -186,39 +225,42 @@
                                 <p class="team-text">Some Girl</p>
                             </div>
                             <div class="line"></div>
-
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
-        <section>
+        <section class="fifth-section">
             <div class="container">
-                <div>
-                    <h2>Subscribe To Get Special Offers</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                        elementum tristique.</p>
+                <div class="banana-box">
                     <div>
-                        <button type="button">Enter your email</button>
-                        <button type="button">Subscribe</button>
+                        <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+                        <p class="subscribe-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse varius enim in eros elementum tristique.
+                        </p>
+                        <div class="banana-btn">
+                            <form class="btn-list">
+                                <label for=""></label>
+                                <input type="email" name="email" placeholder="Enter your email" class="btn-mail">
+                            </form>
+                            <button type="button" class="btn-subscribe">Subscribe</button>
+                        </div>
+
                     </div>
-                </div>
-                <img src="" alt="банан">
-                <div>
+
+                    <img src="./images/banan.jpg" alt="банан" class="subscribe-img" />
 
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
         <div class="container">
             <nav>
-                <a href=""><img src="./images/Vector.jpg" alt="logo"></a>
+                <a href=""><img src="./images/Vector.jpg" alt="logo" /></a>
                 <ul class="header-list list">
                     <li><a href="" class="list">Home</a></li>
                     <li><a href="" class="list">About</a></li>
@@ -233,11 +275,33 @@
                     <button type="button">Enter your email</button>
                     <button type="button">Subscribe</button>
                 </div>
-                <p>By subscribing you agree to with our <span> <a href="">Privacy Policy</a> </span></p>
-
+                <p>
+                    By subscribing you agree to with our
+                    <span> <a href="">Privacy Policy</a> </span>
+                </p>
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h3 class="form-title">Order Form</h3>
+            <form class="form-list">
+                <label for=""></label>
+                <input type="text" name="name" id="" class="modal-field" placeholder="Your name">
+                <label for=""></label>
+                <input type="tel" name="tel" id="" class="modal-field" placeholder="+38(0_ _) _ _ _   _ _   _ _">
+                <label for=""></label>
+                <input type="email" name="email" id="" class="modal-field" placeholder="example@gmail.com">
+            </form>
+            <button type="button" class="btn-send">Send</button>
+            <button type="button" class="btn-modal" data-modal-close>
+                <svg class="icon-btn" width="10" height="10">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

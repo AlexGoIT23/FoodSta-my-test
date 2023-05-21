@@ -43,13 +43,14 @@ button {
 
 .list {
   text-decoration: none;
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* ==============header============= */
 
 .header-block {
   display: flex;
+  position: relative;
   justify-content: space-between;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
@@ -62,8 +63,19 @@ button {
   display: flex;
 }
 
+.logo-box {
+  display: flex;
+  width: 66px;
+}
+
 .header-logo {
+  position: absolute;
   padding: 10px 0;
+  width: 66px;
+}
+
+.header-logo:hover {
+  width: 70px;
 }
 
 .header-list {
@@ -74,17 +86,17 @@ button {
 }
 
 .link-text {
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.1;
   color: var(--main-text-color);
+  transition: all 300ms linear;
 }
 
 .btn-header {
   display: flex;
   align-items: start;
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -97,17 +109,21 @@ button {
   background-color: #bbf330;
   border-radius: 30px;
   border: none;
+  transition: all 300ms linear;
 }
 
 .btn-header:hover,
 .btn-header:focus {
   background-color: #ffe450;
+  transition: all 300ms linear;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
 }
 
 .link-text:hover,
 .link-text:focus {
   color: #bbf330;
   text-decoration: underline;
+  transition: all 300ms linear;
 }
 
 /* ================ 1 секція =================== */
@@ -128,7 +144,7 @@ button {
 }
 
 .main-title {
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
   font-weight: 700;
   font-size: 48px;
   line-height: 1.2;
@@ -136,38 +152,61 @@ button {
 }
 
 .main-text {
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 46px;
 }
 
-.img-plate {
+.img-plate-box {
+  position: relative;
   display: flex;
-
+  width: 510px;
+  height: 510px;
+  border-radius: 50%;
+  border: 24px solid #ffe450;
+  overflow: hidden;
+  cursor: pointer;
   /* background-image: url(../images/plate.png);
         background-repeat: no-repeat;
         background-size: cover; */
   /* object-fit: contain;
   object-position: 50%; */
-  width: 510px;
-  height: 510px;
+
   /* box-shadow: inset 0 0 0 10px #fff, inset 0 0 0 24px #ffe450; */
   /* border: 14px solid #ffe450; */
 
-  border-radius: 50%;
   /* overflow: hidden; */
-  border: 10px solid #fff;
-  outline: 14px solid #ffe450;
-  /* border-radius: 50%; */
-  /* box-shadow: 0 0 0 14px #7f50ff;   */
 }
 
-/* .img-plate {
+.img-plate {
   position: absolute;
   display: flex;
-  height: 100%; */
+  height: 100%;
+  transition: translate 500ms linear;
+  translate: 0;
+}
+
+/* .img-plate:hover {
+  translate: 100%;
+} */
+
+.img-plate-two {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: translate 500ms linear;
+  translate: 0;
+  transition: all 500ms linear;
+}
+
+.img-plate-two:hover {
+  translate: 100%;
+  transition: all 500ms linear;
+}
 
 /* object-fit: contain;
         object-position: 50%; */
@@ -199,8 +238,16 @@ button {
   height: 550px;
   box-shadow: inset 0 0 0 20px #ffe450, 0 0 0 5px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+  transition: all 250ms linear;
+  cursor: pointer;
 }
 
+.aple-item:hover,
+.aple-item:focus {
+  box-shadow: inset 0 0 0 20px #ffe450, 0 0 0 5px #ffe450,
+    0px 0px 41px 3px rgba(0, 0, 0, 0.6);
+  transition: all 250ms linear;
+}
 .aple-list {
   display: flex;
   justify-content: space-between;
@@ -216,7 +263,7 @@ button {
 }
 
 .aple-title {
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -240,10 +287,18 @@ button {
   background-color: #fff;
   border-radius: 50%;
   margin-bottom: 8px;
+  transition: all 250ms linear;
+}
+
+.bg-icon:hover,
+.bg-icon:focus {
+  background-color: #ffe550;
+  transition: all 300ms linear;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
 }
 
 .skills-title {
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
@@ -251,7 +306,7 @@ button {
 }
 
 .skills-text {
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -260,7 +315,7 @@ button {
 .aple-btn {
   display: flex;
   align-items: center;
-  font-family: var(--main-font);
+  /* font-family: var(--main-font); */
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -273,12 +328,15 @@ button {
   background-color: #ffffff;
   border: 2px solid #7eb101;
   border-radius: 30px;
+  transition: all 300ms linear;
 }
 
 .aple-btn:hover,
 .aple-btn:focus {
   background-color: #bbf330;
   border-color: #bbf330;
+  transition: all 300ms linear;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
 }
 
 /* ================== Favorites =============== */
@@ -301,26 +359,34 @@ button {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 36px;
 }
 
 .meal-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 56px 30px;
-  column-gap: 60px;
-  row-gap: 60px;
+  gap: 32px;
 }
 
 .meal-box {
-  width: calc((100% - 120px) / 3);
+  width: calc((100% - 64px) / 3);
+}
+
+.meal-img:hover,
+.meal-img:focus {
+  border-color: #bbf330;
+  box-shadow: 3px 4px 32px 2px rgba(0, 0, 0, 0.75);
+  transition: all 300ms linear;
 }
 
 .meal-img {
   display: flex;
-  height: auto;
-  border: 26px solid #fff;
+  width: 100%;
+  padding: 24px;
+  border: 16px solid #ffe550;
   border-radius: 50%;
-  box-shadow: 0 0 0 14px #ffe550;
+  box-shadow: 3px 4px 15px -5px rgba(0, 0, 0, 0.75);
+  transition: all 300ms linear;
 }
 
 /* ============= 4 секція ============== */
@@ -360,6 +426,14 @@ button {
   border-radius: 30px;
   border-top-left-radius: 0;
   margin-right: 140px;
+  box-shadow: 9px 9px 15px -4px rgba(0, 0, 0, 0.6);
+  transition: all 250ms linear;
+}
+
+.about-card-one:hover,
+.about-card-one:focus {
+  box-shadow: 9px 9px 17px 6px rgba(0, 0, 0, 0.6);
+  transition: all 250ms linear;
 }
 
 .card-one-list {
@@ -370,8 +444,7 @@ button {
 }
 
 .card-one-text {
-  font-family: var(--main-font);
-  font-style: normal;
+  /* font-family: var(--main-font); */
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
@@ -395,6 +468,14 @@ button {
   height: 46px;
   box-shadow: 0 0 0 2px #ffe450;
   border-radius: 50%;
+
+  transition: all 300ms linear;
+}
+
+.card-img-man:hover,
+.card-img-man:focus {
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+  transition: all 300ms linear;
 }
 
 .card-img-girl {
@@ -406,8 +487,15 @@ button {
   background-size: contain;
   width: 46px;
   height: 46px;
-  box-shadow: 0 0 0 2px #ffe450;
+  box-shadow: 0 0 0 2px rgb(255, 228, 80);
   border-radius: 50%;
+  transition: all 300ms linear;
+}
+
+.card-img-girl:hover,
+.card-img-girl:focus {
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+  transition: all 300ms linear;
 }
 /* .img {
     display: inline-block;
@@ -428,7 +516,7 @@ button {
 }
 
 .team-text {
-  font-family: "Roboto" sans-serif;
+  /* font-family: "Roboto" sans-serif; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -441,4 +529,190 @@ button {
   height: auto;
   background-color: #7eb101;
   border-radius: 1px;
+}
+
+/* ================ п'ята секція =============== */
+
+.fifth-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 44px;
+  padding-left: 16px;
+}
+
+.subscribe-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 16px;
+  margin-bottom: 50px;
+}
+
+.banana-box {
+  display: flex;
+}
+
+.banana-btn {
+  display: flex;
+  padding-left: 16px;
+}
+
+/* .btn-list {
+  display: flex;
+} */
+
+.btn-mail {
+  display: flex;
+  align-items: start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+  height: 32px;
+  min-width: 394px;
+  padding: 6px 18px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #ffe550;
+}
+
+.btn-mail:hover,
+.btn-mail:focus {
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+.btn-subscribe {
+  display: flex;
+  align-items: start;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  height: 32px;
+  padding: 6px 18px;
+  background-color: #bbf330;
+  border-radius: 30px;
+  border: none;
+  transition: all 300ms linear;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: #ffe450;
+  transition: all 300ms linear;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+.subscribe-img {
+  max-width: 546px;
+  margin-left: 46px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 99, 99, 0.7);
+  transition: all 300ms linear;
+}
+
+.modal {
+  position: absolute;
+  width: 449px;
+  height: 458px;
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  background-color: #ffe550;
+}
+
+.btn-modal {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms linear;
+}
+
+.btn-modal:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.6);
+  transition: all 250ms linear;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #2c2c2c;
+  padding-top: 32px;
+  margin-bottom: 40px;
+}
+.form-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.modal-field {
+  height: 48px;
+  border: none;
+  border-radius: 30px;
+  padding-left: 12px;
+  box-shadow: inset 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+.modal-field:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.btn-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  height: 32px;
+  padding: 6px 18px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 32px;
+  background-color: #ffffff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  transition: all 300ms linear;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  background-color: #bbf330;
+  border-color: #bbf330;
+  transition: all 300ms linear;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
 }
